@@ -14,21 +14,28 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from "@angular/platform
 import { HomeComponent } from './views/home/home.component';
 import { MatCardModule } from "@angular/material/card";
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
+import { RedDirective } from './directives/red.directive';
 
 @NgModule({
   declarations: [
+    //components
     AppComponent,
     HeaderComponent,
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ProductCrudComponent
+    ProductCrudComponent,
+
+    //directive
+    RedDirective
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
     AppRoutingModule,
+
+    // material
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
