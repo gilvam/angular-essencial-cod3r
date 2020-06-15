@@ -18,23 +18,24 @@ import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { MatButtonModule } from "@angular/material/button";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [
-    //components
+    // components
     AppComponent,
     HeaderComponent,
     FooterComponent,
     NavComponent,
     HomeComponent,
     ProductCrudComponent,
+    ProductCreateComponent,
 
-    //directive
+    // directives
     RedDirective,
-
     ForDirective,
 
-    ProductCreateComponent
+    // pipes
   ],
   imports: [
     BrowserModule,
@@ -47,9 +48,12 @@ import { MatButtonModule } from "@angular/material/button";
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule,
   ],
-  providers: [],
+  providers: [
+    // services
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
